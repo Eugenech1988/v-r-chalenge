@@ -1,0 +1,41 @@
+.gridWrapper {
+  padding: 20px;
+}
+
+.grid {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+  .orderRow {
+    &:hover {
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
+  }
+
+  .gridHeadCell {
+    cursor: pointer;
+    &:hover {
+      background-color: #f0f0f0
+    }
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: {
+      left: 15px;
+      top: 5px;
+      bottom: 5px;
+    }
+  }
+
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+}

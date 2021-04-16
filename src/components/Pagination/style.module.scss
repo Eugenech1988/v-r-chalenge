@@ -1,0 +1,36 @@
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.paginationLeft {
+  color: cornflowerblue;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.paginationNumbers {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.paginationNumber {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  cursor: pointer;
+  &.active {
+    color: cornflowerblue;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.paginationRight {
+  color: cornflowerblue;
+  margin-left: 15px;
+  cursor: pointer;
+}

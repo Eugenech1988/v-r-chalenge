@@ -1,0 +1,80 @@
+.orderCardOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.orderCardWrapper {
+  font-family: arial, sans-serif;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+}
+
+.orderCardHeading {
+  text-transform: uppercase;
+  font-size: 27px;
+  padding-top: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.orderCardList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.orderCardListItem {
+  margin-bottom: 15px;
+  span {
+    display: block;
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    b {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.orderBlock {
+
+}
+
+.orderInput {
+  border: none;
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  width: 15px;
+  display: block;
+  padding: 0;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  &:focus,
+  &:active {
+    outline: none;
+    background: transparent;
+  }
+}
